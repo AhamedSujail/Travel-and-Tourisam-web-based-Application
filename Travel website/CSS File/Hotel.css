@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    overflow-y: hidden;
+    grid-template-columns: 100%;
+    background-color: #0A2647;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 0;
+}
+
+form {
+    margin: 5%;
+    line-height: 15px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    color: white;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select,
+#checkin,
+#checkout {
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#butt {
+    background-color: #205295;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#butt:hover {
+    background-color: #0A2647;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        grid-template-columns: 60% auto;
+    }
+
+    img {
+        height: 80vh;
+        border-radius: 0 50% 50% 0;
+        transform: scaleY(2);
+    }
+}

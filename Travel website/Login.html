@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="CSS File/Login & Register.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="PHP File/Login.php" method="post">
+            <div class="imgcontainer">
+                <img src="images/logo-removebg.png" alt="Avatar" class="avatar">
+            </div>
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="Register.html">Register</a>.</p>
+        </form>
+    </div>
+</body>
+
+</html>

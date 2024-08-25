@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS File/Transport.css">
+    <link rel="stylesheet" href="CSS File/style.css">
+    <title>Transport Booking</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>CLOUD 4 TRAVEL</span></a>
+    
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">HOME</a>
+    
+            <div class="dropdown">
+                <button class="dropbtn">BOOKING
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Hotel.html">HOTEL</a>
+                    <a href="Transport.html">TRANSPORT</a>
+                    <a href="Photographer.html">PHOTOGRAPHER</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button class="dropbtn">PLACE
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Northern.html">NORTHERN</a>
+                    <a href="north centrl.html">NORTH CENTRAL</a>
+                    <a href="northwestern.html">NORTH WESTERN</a>
+                    <a href="sabragamuwa.html">SABRAGAMUWA</a>
+                    <a href="uva.html">UVA</a>
+                    <a href="western.html">WESTERN</a>
+                    <a href="southern.html">SOUTHERN</a>
+                    <a href="central.html">CENTRAL</a>
+                    <a href="eastern.html">EASTERN</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button class="dropbtn">EMERGENCY
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Gethlp.html">GET HELP</a>
+                    <a href="Health Care.html">HEALTHCARE</a>
+                </div>
+            </div>
+    
+            <a href="Payment.html">PAYMENT</a>
+            <a href="Feedback.html">FEEDBACK</a>
+
+        </nav>
+    </header>  
+    <div>
+        <img src="https://img.freepik.com/free-vector/man-tracking-taxi-driver-cab-tablet-map-guy-using-device-car-location-with-gps-system-app-male-checking-navigation-smartphone-booking-taxi-cartography-display-flat-illustration_74855-20647.jpg?w=2000"
+            alt="transport">
+    </div>
+    <div>
+        <form action="PHP File/Transport.php" method="post">
+
+            <label for="transportation-id">Transportation Id:</label>
+            <select id="transportation-id" name="transportation-id">
+                <option value="001">001</option>
+                <option value="002">002</option>
+                <option value="003">003</option>
+            </select>
+            <label for="transportation-type">Transportation Type:</label>
+    <select id="transportation-type" name="transportation-type">
+        <option value="car">car</option>
+        <option value="van">van</option>
+        <option value="bus">bus</option>
+    </select>
+
+    <label for="departure-date">Departure Date:</label>
+    <input type="date" id="departure-date" name="departure-date">
+
+    <label for="return-date">Return Date:</label>
+    <input type="date" id="return-date" name="return-date">
+
+    <label for="passenger-count">Number of Passengers:</label>
+    <input type="number" id="passenger-count" name="passenger-count" min="1">
+
+            <button type="submit" id="butt">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

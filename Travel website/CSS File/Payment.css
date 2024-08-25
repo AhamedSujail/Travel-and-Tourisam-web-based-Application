@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: #C0C0C0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add responsive styles for the navigation bar */
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .topnav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topnav a {
+        padding: 10px;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+/* Form styles */
+form {
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Column styles */
+.col {
+    flex: 1 1 100%;
+}
+
+/* Title styles */
+.title {
+    font-size: 20px;
+    color: orange;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Input box styles */
+.inputBox {
+    margin: 15px 0;
+}
+
+.inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.inputBox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 10px;
+}
+
+.inputBox input:focus {
+    border: 1px solid #000;
+}
+
+/* Flex styles */
+.flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .inputBox {
+    margin-top: 5px;
+}
+
+/* Submit button styles */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: orange;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    background: #2ecc71;
+}
